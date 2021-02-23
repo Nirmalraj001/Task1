@@ -1,9 +1,9 @@
-import logo from './jumbo-logo.png';
+import logo from './assets/image/logo.jpg';
 import logo1 from './main-logo.jpeg';
 import img from './assets/image/ad1.png';
-import img1 from './assets/image/ad2.jpg';
+import img1 from './assets/image/gift.jpg';
 import img2 from './assets/image/ad3.png';
-import './App.css';
+import './media.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
 
-    <header id="header" class="fixed-top ">
+    <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
       <span class="logo mr-auto"><img src={logo1} alt="Logo" width="80px" height="40px"/></span>
@@ -61,7 +61,7 @@ function App() {
           <button type="button" class="btn btn-outline-secondary">CONTACT SALES</button>
           </div>
 
-          <div class="col-sm-7"><img src={logo} alt="Logo" width="720px" height="480px"/></div>
+          <div class="col-sm-7" id="jumbo-image"><img src={logo} alt="Logo" width="412px" height="412px"/></div>
         </div>
         </div>
       </div>
@@ -77,24 +77,27 @@ function App() {
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href=""><img src={img} alt="Logo" width="130px" height="130px"/></a></h4>
-              <p>Make additional money on every transaction of yours</p>
+              <a href=""><img src={img} alt="Logo" width="130px" height="130px"/></a>
+              <h3>MONETIZE</h3>
+              <p class="text-center">Make additional money on every transaction of yours</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href=""><img src={img1} alt="Logo" width="130px" height="130px"/></a></h4>
-              <p>Make additional money on every transaction of yours</p>
+              <a href=""><img src={img1} alt="Logo" width="130px" height="130px"/></a>
+              <h3>GIFT</h3>
+              <p class="text-center"> Gift your customers for transacting with you</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href=""><img src={img2} alt="Logo" width="130px" height="130px"/></a></h4>
-              <p>Make additional money on every transaction of yours</p>
+              <a href=""><img src={img2} alt="Logo" width="130px" height="130px"/></a>
+              <h3>STICKINESS</h3>
+              <p class="text-center">Enhance customer stickiness on your platform</p>
             </div>
           </div>
         </div>
